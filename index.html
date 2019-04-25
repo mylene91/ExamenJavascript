@@ -19,19 +19,95 @@
     <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" rel="stylesheet">
 
 
-
 </head>
 <body>
 
-<div class="container">   Je suis ici  :) </div>
+    <section id="sectionNav" class="container-fluid">
+        <div class="container">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pas de Blog</a>
+                </li>
+             </ul>
+        </div>
+    </section>
+
+
+    <img data-lazy="img/lazyfonz2.png" height="390" width="433"/>
+
+
+    <section id="section_1" class="container-fluid">
+        <div class="container">
+            <img src="img/lazyfonz1.jpg" height="390" width="433"/>
+            <img data-lazy="img/lazyfonz1.png"/>
+            <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button>
+        </div>
+    </section>
 
 
 
 
 
-<script src="js/script.js"></script>
-<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.less">
-<script src="node_modules/jqueryui/jquery-ui.js"></script>
+    <!--Partie programme de la formation-->
+    <section id="contenu" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="heading">
+                    <h2>Programme de la formation</h2>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="accordion">
+                    <div class="card-header ">Le langage JavaScript</div>
+                    <div class="card-body text-dark">
+                        <p class="card-text">
+                        <ul class="timeline">
+                            <li>Synthaxe et éléments de base</li>
+                            <li>Les fonctions et objectifs personnalisés</li>
+                            <li>Les tableaux</li>
+                            <li>Les normes ES6</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script id="mondivamoi" type="tpl-mustache">
+
+            <div class="col-md-12">
+                <p> Vous êtes : {{prenom}} {{nom}} </p>
+            </div>
+
+            <div class="row"><p>{{ville}}</p></div>
+
+            </div>
+
+        </script>
+
+    <section id="listeEleve">
+        <div class="container">
+        </div>
+    </section>
+
+
+
+
+
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.js"></script>
+
+
+    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
 <script src="node_modules/jquery/src/jquery.js"></script>
 
 </body>
